@@ -3,6 +3,11 @@ import './App.css'
 import { use, useState } from "react";
 import User from './Props';
 import Wrapper from './Wrapper';
+import Checkbox from './checkbox';
+import Clock from './clock';
+import Nestedloop from './Nestedloop';
+
+
 // import Comp from './Component'
 
 // function App() {
@@ -88,16 +93,180 @@ import Wrapper from './Wrapper';
 
 
 
+// function App(){
+//   const[field,setField]=useState("")
+//   return(
+//     <div>
+//       <input type="text" value={field} placeholder='Enter User Name..' onChange={(event)=>setField(event.target.value)}/>
+//       <h1>{field}</h1>
+//       <button style={{color:"red"}} onClick={()=>setField("")}>Clear value</button>
+//       {/* <Wrapper>
+//         <h1>Wrapper 1</h1>
+//       </Wrapper> */}
+//     </div>
+//   )
+// }
+
+
+
+
+/*
 function App(){
-  const[field,setField]=useState("")
+  const [name,setName]=useState("")
+  const [pass,setPass]=useState("")
+  const [email,setEmail]=useState("")
+  return(
+    <form action="" method="get">
+      <input type="text" placeholder='Enter Name'/>
+      <br /><br />
+      <input type="password" placeholder='Enter password'/>
+      <br /><br />
+      <input type="text" placeholder='Enter email'/>
+      <br /><br />
+      <button>Submit</button>
+    </form>
+  )
+}*/
+
+
+
+
+/*function App(){
+  return (
+    <div>
+    <Checkbox/>
+    </div>
+  )
+}*/
+
+
+/*
+function App(){
+
+  const[gender,setGender]=useState('Male');
   return(
     <div>
-      <input type="text" placeholder='Enter User Name..' onChange={(event)=>setField(event.target.value)}/>
-      <h1>{field}</h1>
-      <Wrapper>
-        <h1>Wrapper 1</h1>
-      </Wrapper>
+      <h1>Select your gender</h1>
+      
+      <h4>
+        <input type="radio" onChange={(event)=> setGender(event.target.value)} name='gender' id='male' value={"Male"}/>
+        <label htmlFor="male">Male</label>
+        <input type="radio" onChange={(event)=> setGender(event.target.value)} name='gender' id='female' value={"Female"}/>
+        <label htmlFor="female">Female</label>
+      </h4>
+      <h2>Selected gender: {gender} </h2>
     </div>
+  )
+}*/
+
+
+
+/*
+function App() {
+
+  const userData=[
+    {
+      name:"Abinash",
+      id:1,
+      age:21,
+      experience:1
+    },
+    {
+      name:"Bikash",
+      id:2,
+      age:21,
+      experience:2
+    },
+      {
+      name:"Rajeesh",
+      id:3,
+      age:21,
+      experience:2
+    }
+
+    
+  ]
+  return (
+    <div>
+      <table border={"1"}>
+        <thead>
+          <tr>
+            <td> NAME</td>
+            <td> ID</td>
+            <td> AGE</td>
+            <td> EXPERIENCE</td>
+          </tr>
+        </thead>
+        <tbody>
+          {
+            userData.map((user)=>(
+              <tr>
+            <td>{user.name}</td>
+            <td> {user.id}</td>
+            <td>{user.age}</td>
+            <td> {user.experience}</td>
+          </tr>
+            ))
+          }
+        </tbody>
+      </table>
+
+
+
+      <h1>Dummy data</h1>
+      <table border={"1"}>
+        <thead>
+          <tr>
+            <td> ID</td>
+            <td> NAME</td>
+            <td> AGE</td>
+            <td> EXPERIENCE</td>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td> 001</td>
+            <td>Abinash</td>
+            <td>21</td>
+            <td>1</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  )
+}*/
+
+
+/*
+function App(){
+  const [color,setColor]= useState('green');
+  return(
+    <div>
+      <select onChange={(event)=> setColor(event.target.value)}>
+        <option value={"red"}>Red</option>
+        <option value={"green"}>Green</option>
+        <option value={"blue"}>Blue</option>
+      </select>
+    <Clock color={color}/>
+    </div>
+  )
+}*/
+
+
+/*
+function App(){
+  return(
+    <Nestedloop/>
+  )
+}*/
+
+
+
+function App(){
+  return(
+    
   )
 }
 export default App;
+
