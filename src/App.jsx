@@ -6,6 +6,7 @@ import Wrapper from './Wrapper';
 import Checkbox from './checkbox';
 import Clock from './clock';
 import Nestedloop from './Nestedloop';
+import Hooks from './Hooks';
 
 
 // import Comp from './Component'
@@ -265,8 +266,9 @@ function App(){
 
 function App(){
   return(
-    <div></div>
+    <div>
+      <Hooks/>
+    </div>
   )
 }
 export default App;
-
