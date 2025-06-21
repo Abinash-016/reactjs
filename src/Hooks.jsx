@@ -21,7 +21,7 @@ function Hooks() {
     }, [counter])
 
     useEffect(() => {
-        return ()=>{
+        return () => {
             console.log("unmounting phase ");
         }
     })

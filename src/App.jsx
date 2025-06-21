@@ -7,6 +7,8 @@ import Checkbox from './checkbox';
 import Clock from './clock';
 import Nestedloop from './Nestedloop';
 import Hooks from './Hooks';
+import StyledComponent from './StyledComponent';
+import Bootstrap from './reactBootstrap';
 
 
 // import Comp from './Component'
@@ -267,7 +269,9 @@ function App(){
 function App(){
   return(
     <div>
-      <Hooks/>
+      {/* <Hooks/> */}
+      {/* <StyledComponent></StyledComponent> */}
+      <Bootstrap></Bootstrap>
     </div>
   )
 }
