@@ -9,6 +9,7 @@ import Nestedloop from './Nestedloop';
 import Hooks from './Hooks';
 import StyledComponent from './StyledComponent';
 import Bootstrap from './reactBootstrap';
+import Useref from './useRefhook';
 
 
 // import Comp from './Component'
@@ -265,14 +266,43 @@ function App(){
 }*/
 
 
-
+/*
 function App(){
   return(
     <div>
-      {/* <Hooks/> */}
-      {/* <StyledComponent></StyledComponent> */}
+      // { <Hooks/> }
+      { <StyledComponent></StyledComponent> }
       <Bootstrap></Bootstrap>
     </div>
   )
 }
+  */
+
+
+/*
+function App(){
+ 
+  const [show,setShow]=useState(false);
+
+ return(
+  <div>
+    {
+      show?<img src="/PASSPORT.png" alt="" width="250px"/>:null
+    }
+     
+     <button style={{ border:"5px solid gray", borderRadius:"5px" }} onClick={()=>setShow(!show)}>Click to reveal..</button>
+  </div>
+ );
+}*/
+
+
+
+function App(){
+  return (
+    <div>
+      <Useref/>
+    </div>
+  )
+}
+
 export default App;
