@@ -10,6 +10,8 @@ import Hooks from './Hooks';
 import StyledComponent from './StyledComponent';
 import Bootstrap from './reactBootstrap';
 import Useref from './useRefhook';
+import UComp from './Uncontrolledcomponent';
+import Forward from './Forwardref';
 
 
 // import Comp from './Component'
@@ -297,10 +299,14 @@ function App(){
 
 
 
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
 function App(){
   return (
     <div>
-      <Useref/>
+      {/* <Useref/> */}
+      {/* <UComp></UComp> */}
+      <Forward></Forward>
     </div>
   )
 }
