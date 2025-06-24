@@ -1,6 +1,6 @@
 // import Header from './Header'
 import './App.css'
-import { use, useState } from "react";
+import { use, useRef, useState } from "react";
 import User from './Props';
 import Wrapper from './Wrapper';
 import Checkbox from './checkbox';
@@ -12,6 +12,8 @@ import Bootstrap from './reactBootstrap';
 import Useref from './useRefhook';
 import UComp from './Uncontrolledcomponent';
 import Forward from './Forwardref';
+import UseForm from './UseFormstatus';
+import UseTransition from './UseTranstionHook';
 
 
 // import Comp from './Component'
@@ -302,11 +304,21 @@ function App(){
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 function App(){
+  const inputRef=useRef(null);
+  const updateRef=()=>{
+    inputRef.current.value=292;
+    inputRef.current.focus();
+  }
   return (
     <div>
       {/* <Useref/> */}
       {/* <UComp></UComp> */}
-      <Forward></Forward>
+      {/* <Forward ref={inputRef}></Forward>
+      <button onClick={updateRef}>Update</button> */}
+
+        {/* <UseForm/> */}
+
+        <UseTransition/>
     </div>
   )
 }
