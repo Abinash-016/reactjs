@@ -17,6 +17,11 @@ import UseTransition from './UseTranstionHook';
 import AddUser from './AddUser';
 import Lifting from './liftingStateUp';
 import Ob from './UpdatingObjects';
+import UseAction from './useAction';
+import Fragment from './fragment';
+
+
+
 
 
 // import Comp from './Component'
@@ -313,7 +318,7 @@ function App(){
   //   inputRef.current.focus();
   // }
 
-  const [user,setUser] =useState('')
+  // const [user,setUser] =useState('')
 
   return (
     <div>
@@ -330,7 +335,11 @@ function App(){
         <Lifting  user={user} /> */}
 
 
-        <Ob></Ob>
+        {/* <Ob></Ob> */}
+
+        {/* <UseAction></UseAction> */}
+
+        <Fragment/>
     </div>
   )
 }
