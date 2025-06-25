@@ -16,6 +16,8 @@ import UseForm from './UseFormstatus';
 import UseTransition from './UseTranstionHook';
 import AddUser from './AddUser';
 import Lifting from './liftingStateUp';
+import Ob from './UpdatingObjects';
+
 
 // import Comp from './Component'
 
@@ -324,8 +326,11 @@ function App(){
 
         {/* <UseTransition/> */}
 
-        <AddUser setUser={setUser} ></AddUser>
-        <Lifting  user={user} />
+        {/* <AddUser setUser={setUser} ></AddUser>
+        <Lifting  user={user} /> */}
+
+
+        <Ob></Ob>
     </div>
   )
 }
