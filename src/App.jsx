@@ -14,7 +14,8 @@ import UComp from './Uncontrolledcomponent';
 import Forward from './Forwardref';
 import UseForm from './UseFormstatus';
 import UseTransition from './UseTranstionHook';
-
+import AddUser from './AddUser';
+import Lifting from './liftingStateUp';
 
 // import Comp from './Component'
 
@@ -304,11 +305,14 @@ function App(){
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 function App(){
-  const inputRef=useRef(null);
-  const updateRef=()=>{
-    inputRef.current.value=292;
-    inputRef.current.focus();
-  }
+  // const inputRef=useRef(null);
+  // const updateRef=()=>{
+  //   inputRef.current.value=292;
+  //   inputRef.current.focus();
+  // }
+
+  const [user,setUser] =useState('')
+
   return (
     <div>
       {/* <Useref/> */}
@@ -318,7 +322,10 @@ function App(){
 
         {/* <UseForm/> */}
 
-        <UseTransition/>
+        {/* <UseTransition/> */}
+
+        <AddUser setUser={setUser} ></AddUser>
+        <Lifting  user={user} />
     </div>
   )
 }
