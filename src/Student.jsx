@@ -9,7 +9,7 @@ function Stud() {
         <div style={{ backgroundColor: 'red', padding: '10px' }}>
             <ContextAPI.Provider value={subject} >
                 <select onChange={(event)=>setSubject(event.target.value)}>
-                    <option value="Math">Math</option>
+                    <option >Select a subject</option>
                     <option value="English">English</option>
                     <option value="Science">Science</option>
                     <option value="Chemistry">Chemistry</option>

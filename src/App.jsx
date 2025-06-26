@@ -348,9 +348,12 @@ function App(){
 
 
 
-        <ContextAPI></ContextAPI>
+        {/* <ContextAPI></ContextAPI>
           <Stud/>
-          
+           */}
+
+
+
 
     </div>
   )
