@@ -19,6 +19,11 @@ import Lifting from './liftingStateUp';
 import Ob from './UpdatingObjects';
 import UseAction from './useAction';
 import Fragment from './fragment';
+import { ContextAPI } from './ContextAPI';
+import Stud from './Student';
+import Subject from './Subject';
+
+
 
 
 
@@ -339,7 +344,14 @@ function App(){
 
         {/* <UseAction></UseAction> */}
 
-        <Fragment/>
+        {/* <Fragment/> */}
+
+
+
+        <ContextAPI></ContextAPI>
+          <Stud/>
+          
+
     </div>
   )
 }
