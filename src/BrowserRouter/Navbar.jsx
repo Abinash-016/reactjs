@@ -1,8 +1,9 @@
-import { Link } from "react-router";
+import { Link,Outlet } from "react-router";
 import './header.css'
 
 export default function Nav(){
-    return <div className="header">
+    return <div>
+        <div className="header">
         <div>
             <Link className="link" ><h2>LOGO</h2></Link>
         </div>
@@ -19,5 +20,6 @@ export default function Nav(){
                 </li>
              </ul>
         </div>
-</div>    
+</div>    <Outlet/>
+    </div>
 }

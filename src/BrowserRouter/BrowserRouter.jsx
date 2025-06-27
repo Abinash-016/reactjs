@@ -9,14 +9,24 @@ import Projects from "./Projects";
 
 function BroRout(){
     return (
+        
         <div style={{padding:'10px'}}>
             <BrowserRouter >
-            <Nav/>
             <Routes>
+
+            <Route element={<Nav/>}>
+               
                 <Route path="/" element={<Home/>}/>
                 <Route path="/about" element={<About/>}/>
-                <Route path="/projects" element={<Projects/>}/>
+                 
+            </Route>
+
+
+
+                <Route>
+               <Route path="/projects" element={<Projects/>}/>
                 <Route path="/*" element={<PNF/>}/>
+                </Route>
             </Routes>
            
             </BrowserRouter>
