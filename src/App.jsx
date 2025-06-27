@@ -22,6 +22,7 @@ import Fragment from './fragment';
 import { ContextAPI } from './ContextAPI';
 import Stud from './Student';
 import Subject from './Subject';
+import BroRout from './BrowserRouter/BrowserRouter';
 
 
 
@@ -352,7 +353,7 @@ function App(){
           <Stud/>
            */}
 
-
+<BroRout/>
 
 
     </div>
