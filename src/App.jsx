@@ -23,6 +23,7 @@ import { ContextAPI } from './ContextAPI';
 import Stud from './Student';
 import Subject from './Subject';
 import BroRout from './BrowserRouter/BrowserRouter';
+import Dummy from './Dummyjson(API method)';
 
 
 
@@ -354,6 +355,8 @@ function App(){
            */}
 
 <BroRout/>
+
+<Dummy></Dummy>
 
 
 
