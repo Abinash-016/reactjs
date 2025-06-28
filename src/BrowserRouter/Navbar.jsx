@@ -1,22 +1,22 @@
-import { Link,Outlet } from "react-router";
+import { NavLink,Outlet } from "react-router";
 import './header.css'
 
 export default function Nav(){
     return <div>
         <div className="header">
         <div>
-            <Link className="link" ><h2>LOGO</h2></Link>
+            <NavLink className="NavLink" ><h2>LOGO</h2></NavLink>
         </div>
         <div>
              <ul>
                 <li>
-                    <Link className="link" to={"./"}>Home</Link>
+                    <NavLink className="NavLink" to={"./"}>Home</NavLink>
                 </li>
                 <li>
-                    <Link className="link" to={"./about"}>About</Link>
+                    <NavLink className="NavLink" to={"./about"}>About</NavLink>
                 </li>
                 <li>
-                    <Link className="link" to={"./projects"}>Projects</Link>
+                    <NavLink className="NavLink" to={"./projects"}>Projects</NavLink>
                 </li>
              </ul>
         </div>

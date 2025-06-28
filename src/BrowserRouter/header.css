@@ -12,12 +12,16 @@ ul{
 li{
    margin: 5px;
 }
-.header .link {
+.header .NavLink {
     text-decoration: none;
     font-size: 20px;
 }
-.projects .link{
+.projects .NavLink{
     text-decoration: none;
     font-size: 20px;
 
+}
+
+.active{
+    font-weight: 900;
 }

@@ -1,4 +1,4 @@
-import { Link } from "react-router";
+import { NavLink } from "react-router";
 import './header.css'
 
 export default function Projects() {
@@ -9,10 +9,10 @@ export default function Projects() {
             <h1 style={{ textAlign: "center" }}>PROJECTS👇</h1>
             <ul style={{ justifyContent: "center" }}>
                 <li>
-                    <Link className="link" to={"./blinkbot"}>BlinkBot</Link>
+                    <NavLink className="NavLink" to={"./blinkbot"}>BlinkBot</NavLink>
                 </li>
                 <li>
-                    <Link className="link" to={"./yumrush"}>Yumrush</Link>
+                    <NavLink className="NavLink" to={"./yumrush"}>Yumrush</NavLink>
                 </li>
             </ul>
         </div>

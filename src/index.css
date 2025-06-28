@@ -1,3 +1,6 @@
+@import "tailwindcss";
+
+
 /*
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
@@ -46,7 +49,7 @@ h1 {
   background-color: #4948a1;
   cursor: pointer;
   transition: border-color 0.25s;
-} */
+} 
 button:hover {
   border-color: #434bdd;
 }
