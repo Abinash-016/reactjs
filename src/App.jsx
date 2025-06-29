@@ -24,8 +24,8 @@ import Stud from './Student';
 import Subject from './Subject';
 import BroRout from './BrowserRouter/BrowserRouter';
 import Dummy from './Dummyjson(API method)';
-
-
+import UserList from './Adduser/UserDetails';
+import { Route, Routes } from 'react-router';
 
 
 
@@ -356,8 +356,10 @@ function App(){
 
 <BroRout/>
 
-<Dummy></Dummy>
 
+
+
+{/* <Dummy></Dummy> */}
 
 
     </div>

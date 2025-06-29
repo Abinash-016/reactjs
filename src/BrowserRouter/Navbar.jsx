@@ -19,6 +19,7 @@ export default function Nav(){
                     <NavLink className="NavLink" to={"./projects"}>Projects</NavLink>
                 </li>
              </ul>
+             
         </div>
 </div>    <Outlet/>
     </div>
