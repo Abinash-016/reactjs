@@ -37,11 +37,7 @@ function BroRout(){
                 </Route>
             </Routes>
            
-            <ul>
-                <li>
-                    <NavLink to="/addUsers">Add Users</NavLink>
-                </li>
-            </ul>
+            
 
           
         </div>

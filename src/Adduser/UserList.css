@@ -1,0 +1,88 @@
+/* UserList.css */
+.user-list-container {
+  padding: 1rem;
+  max-width: 64rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.user-list-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #4a5568;
+}
+
+.user-list-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.user-list-header {
+  background-color: #edf2f7;
+}
+
+.user-list-th {
+  padding: 0.75rem;
+  border-bottom-width: 2px;
+  border-color: #e2e8f0;
+  text-align: left;
+  font-weight: 600;
+  color: #4a5568;
+}
+
+.user-list-row {
+  transition-property: background-color;
+  transition-duration: 200ms;
+}
+.user-list-row:hover {
+  background-color: #f7fafc;
+}
+
+.user-list-td {
+  padding: 0.75rem;
+  border-bottom-width: 1px;
+  border-color: #e2e8f0;
+  color: #718096;
+}
+
+.user-list-delete-btn {
+  background-color: #65a1f5;
+  color: #fff;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  border-radius: 0.25rem;
+  transition-property: background-color;
+  transition-duration: 200ms;
+}
+.user-list-delete-btn:hover {
+  background-color: #e53e3e;
+}
+
+.user-list-no-data {
+  color: #a0aec0;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 640px) {
+  .user-list-table {
+    width: 100%;
+    overflow-x: auto;
+  }
+  .user-list-th,
+  .user-list-td {
+    padding: 0.5rem;
+    font-size: 0.875rem;
+  }
+  .user-list-delete-btn {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    font-size: 0.75rem;
+  }
+}

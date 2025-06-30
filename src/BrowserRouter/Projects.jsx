@@ -8,12 +8,12 @@ export default function Projects() {
 
             <h1 style={{ textAlign: "center" }}>PROJECTS👇</h1>
             <ul style={{ justifyContent: "center" }}>
-                <li>
-                    <NavLink className="NavLink" to={"./blinkbot"}>BlinkBot</NavLink>
-                </li>
-                <li>
-                    <NavLink className="NavLink" to={"./yumrush"}>Yumrush</NavLink>
-                </li>
+                <button style={{backgroundColor:"skyblue" , margin:"50px", borderRadius:"5px"}}>
+                    <NavLink className=" NavLink w-32 bg-sky-500 text-white p-2 rounded hover:bg-sky-600 transition duration-200" to={"./blinkbot"}>BlinkBot</NavLink>
+                </button>
+                <button style={{backgroundColor:"skyblue" , margin:"50px", borderRadius:"5px"}}>
+                    <NavLink className=" NavLink w-32 bg-sky-500 text-white p-2 rounded hover:bg-sky-600 transition duration-200" to={"./yumrush"}>Yumrush</NavLink>
+                </button>
             </ul>
         </div>
 

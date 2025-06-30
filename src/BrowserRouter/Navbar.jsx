@@ -17,6 +17,13 @@ export default function Nav(){
                 </li>
                 <li>
                     <NavLink className="NavLink" to={"./projects"}>Projects</NavLink>
+                    
+                </li>
+                <li>
+                    <NavLink className="NavLink" to={"./lists"}>UserList</NavLink>
+                </li>
+                <li>
+                    <NavLink className="NavLink" to={"./addUsers"}>Add Users</NavLink>
                 </li>
              </ul>
              
