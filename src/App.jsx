@@ -26,6 +26,8 @@ import BroRout from './BrowserRouter/BrowserRouter';
 import Dummy from './Dummyjson(API method)';
 import UserList from './Adduser/UserDetails';
 import { Route, Routes } from 'react-router';
+import Color from './ColorMixer';
+
 
 
 
@@ -354,13 +356,17 @@ function App(){
           <Stud/>
            */}
 
-<BroRout/>
+
+
+{/* <BroRout/> */}
 
 
 
 
 {/* <Dummy></Dummy> */}
 
+
+<Color></Color>
 
     </div>
   )

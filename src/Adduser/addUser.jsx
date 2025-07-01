@@ -1,4 +1,6 @@
 import { useState } from "react";
+import Home from "../BrowserRouter/Home";
+import { useNavigate } from "react-router";
 
 export default function AddUsers() {
   const [name, setName] = useState("");
@@ -6,6 +8,7 @@ export default function AddUsers() {
   const [auth, setAuth] = useState("");
   const [showSuccessAlert, setShowSuccessAlert] = useState(false);
   const [showErrorAlert, setShowErrorAlert] = useState(false);
+  const navigate = useNavigate();
 
   const createUser = async () => {
     if (!name.trim() || !id.trim() || !auth.trim()) {
@@ -36,9 +39,18 @@ export default function AddUsers() {
     }
   };
 
+  const goback=()=>{
+    navigate("/");
+  }
+
   return (
     <div className="p-4 max-w-md mx-auto">
+      <button
+        onClick={goback}
+        className="mb-4 bg-gray-200 text-white px-4 py-2 rounded hover:bg-gray-400 transition duration-200"
+      >🔙</button>
       <h4 className="text-xl font-semibold mb-4">Add new user: 👉</h4>
+      
       <div className="space-y-4">
         <input
           type="text"
@@ -69,6 +81,7 @@ export default function AddUsers() {
         >
           Add Users
         </button>
+        
       </div>
 
       {showSuccessAlert && (
